@@ -28,7 +28,7 @@ function read(callback, prompt, options = {}) {
             "keypress",
             function () {
                 // get the number of characters entered so far:
-                var len = rl.line.length;
+                const len = rl.line.length;
                 // move cursor back to the beginning of the input:
                 readline.moveCursor(rl.output, -len, 0);
                 // clear everything to the right of the cursor:
