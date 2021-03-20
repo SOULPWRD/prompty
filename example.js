@@ -15,13 +15,11 @@ p.ask(
         console.log(results);
     },
     [{
-        name: "name",
-        label: "What is your name?"
+        name: "username",
+        label: "What is your username?"
     }, {
-        name: "surname",
-        label: "What is your surname?"
-    }, {
-        name: "age",
-        label: "What is your age?"
+        name: "password",
+        label: "What is your password?",
+        hidden: true
     }]
 );

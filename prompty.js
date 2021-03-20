@@ -14,6 +14,7 @@ function prompty(spec = {}) {
             function (config) {
                 const name = config.name;
                 const label = config.label + " ";
+                const hidden = config.hidden;
 
                 return function question(next, results = {}) {
                     read(
@@ -29,7 +30,8 @@ function prompty(spec = {}) {
                         label,
                         {
                             input,
-                            output
+                            output,
+                            hidden
                         }
                     );
                 };
